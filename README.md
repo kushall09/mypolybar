@@ -8,6 +8,6 @@ my custom polybar for xfce4 <br>
 <br>
 xfce4-popup-apllicationsmenu<br> 
 <br>
-xfworkspaces<br><br> wmctrl<br><br> nm-connection-editor<br><br> redshift<br><br> xfce4-power-manager-settings<br>
+xworkspaces<br><br> wmctrl<br><br> nm-connection-editor<br><br> redshift<br><br> xfce4-power-manager-settings<br>
 
 
