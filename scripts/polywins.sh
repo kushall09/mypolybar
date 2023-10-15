@@ -13,7 +13,7 @@ active_underline="#9641e5"
 
 separator="  "
 show="window_class" # options: window_title, window_class, window_classname
-forbidden_classes="Polybar conky Gmrun Xfdesktop Xfce4-panel Xfce4-appfinder"
+forbidden_classes="Polybar conky Gmrun Xfdesktop Xfce4-panel Xfce4-appfinder Xfce4-notifyd GLava"
 empty_desktop_message=" 󰳋 "
 
 char_limit=10
