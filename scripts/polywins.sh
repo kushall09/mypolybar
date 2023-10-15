@@ -1,7 +1,6 @@
 #!/bin/sh
 # POLYWINS
 
-# SETTINGS {{{ ---
 
  active_text_color="#E0B0FF"
 active_bg="#20ffffff"
