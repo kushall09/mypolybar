@@ -2,9 +2,9 @@
 # POLYWINS
 
 
- active_text_color="#E0B0FF"
-active_bg="#20ffffff"
-active_underline="#9641e5"
+ active_text_color="#D8DEE9"
+active_bg="#2E3440"
+active_underline="#5e81AC"
 
  inactive_text_color="#a9a9a9"
  #inactive_bg="#20ffffff"
@@ -12,7 +12,7 @@ active_underline="#9641e5"
 
 separator="  "
 show="window_class" # options: window_title, window_class, window_classname
-forbidden_classes="Polybar conky Gmrun Xfdesktop Xfce4-panel Xfce4-appfinder Xfce4-notifyd GLava"
+forbidden_classes="Polybar Yad conky Gmrun Xfdesktop Xfce4-panel Xfce4-appfinder Xfce4-notifyd GLava Xfce4-screenshooter"
 empty_desktop_message=" 󰳋 "
 
 char_limit=10
