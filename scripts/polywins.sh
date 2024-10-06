@@ -10,9 +10,9 @@ active_underline="#5e81AC"
  #inactive_bg="#20ffffff"
  #inactive_underline="#000000"
 
-separator="  "
+#separator=" "
 show="window_class" # options: window_title, window_class, window_classname
-forbidden_classes="Polybar Yad conky Gmrun Xfdesktop Xfce4-panel Xfce4-appfinder Xfce4-notifyd GLava Xfce4-screenshooter"
+forbidden_classes="N/A Cairo-dock Polybar Yad conky Gmrun Xfdesktop Xfce4-panel Xfce4-appfinder Xfce4-notifyd GLava Xfce4-screenshooter"
 empty_desktop_message=" 󰳋 "
 
 char_limit=10
@@ -154,6 +154,14 @@ generate_window_list() {
 		if [ "$ws" != "$active_workspace" ] && [ "$ws" != "-1" ]; then
 			continue
 		fi
+		
+		#Changing the class into icons ... 
+		#ic="$(cat ~/.config/polybar/arch/scripts/icl.sh | grep -m 1 "$cls" | sed "s/$cls=//")"
+		if grep -q $cls ~/.config/polybar/arch/scripts/icl.txt; then
+			ic="$(cat ~/.config/polybar/arch/scripts/icl.txt | grep -m 1 "$cls" | sed "s/$cls=//")"
+		else
+			ic="$(cat ~/.config/polybar/arch/scripts/icl.txt | grep "default" | sed "s/default=//")"
+		fi
 
 		# Don't show the window if its class is forbidden
 		case "$forbidden_classes" in
@@ -169,7 +177,7 @@ generate_window_list() {
 		
 		# Show the user-selected window property
 		case "$show" in
-			"window_class") w_name="$cls" ;;
+			"window_class") w_name="$ic" ;;
 			"window_classname") w_name="$cname" ;;
 			"window_title") w_name="$title" ;;
 		esac
