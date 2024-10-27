@@ -1,6 +1,7 @@
 # mypolybar
 my custom polybar for xfce4 <br>
 <hr>
+<img src="/barwau.png">
 <img src="/bar.png">
 <hr>
 
